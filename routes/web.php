@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+use Illuminate\Support\Facades\Route;
+
+Route::get(uri:'/', function () {
     return view('welcome');
+});
+
+Route::get(uri:'/test', function () {
+    return 'Hola test';
 });
